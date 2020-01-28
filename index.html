@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SterlingPilder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Sterling Pilder</h1>
+        <h2>Software Developer / Independent Consultant / Human</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>works</h1>
+        <section>
+            <h2>Projects/Skills</h2>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;VB</div>
+                <div><i class="fas fa-circle"></i>&nbsp;C#</div>
+                <div><i class="fas fa-circle"></i>&nbsp;SQL</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5/XHTML</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                <div><i class="fas fa-circle"></i>&nbsp;PHP</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Unix</div>
+                <div><i class="fas fa-circle"></i>&nbsp;C++</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+            </div>
+            <button class="btn_one">Project 1(Work in Progress)</button>
+            <button class="btn_two">Project 2(Work in Progress)</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about</h1>
+            <section>
+                <h2>about me</h2>
+                <p>
+                    My name is Sterling Pilder.  I am a Developer by trade and Engineer\Information Technology\Freelance outside of work.
+                </p>
+                <p>
+                    I have worked for many companies and clients where I have had to learn their stack quickly and efficiently. I’m passionate about technology - not a specific framework or language. In this line of work it's about adaptation, and what works best for the project. I’m open to learning any stack if it works.
+                </p>
+                <p>
+                    My motto as a developer is if I am the smartest person in the room, I am in the wrong room. I love learning, and want to become the best developer I can be. I am a maker - I enjoy creating in my career and after hours. I believe in shipping quality code and working in flow.
+                </p>
+                <p>
+                    I have experience with peer code reviews, mentoring and pair coding sessions. I also have experience with tedious refactoring, and entire re-writes of applications, large and small scale. I have a history working in a remote environment(working flex and core hours), as well as working with small development teams.
+                </p>
+                <p>
+                    I care deeply about the code I write and the effect my work has on the product. I enjoy interaction with clients and seeing the joy they get when they get the application they’ve been wanting.
+                </p>
+                <p>
+                    That said - I think I align with what you’re doing and believe I would be a great fit technology and culture wise. If I’m not a perfect match for this position I am open to other positions that may better fit qualifications.
+                </p>
+            </section>
+            <!--<section>
+                <h2>skills</h2>
+                <p>
+                    i do eveything ;)
+                </p>
+            </section>-->
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+             <br> <a href=""></a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
